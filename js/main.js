@@ -13,19 +13,13 @@ if (localStorage.getItem('tasks')) {
 
 checkEmptyList();
 
-// Добавление задачи
+// Добавление, удаление, отметка, редактирование задачи
 form.addEventListener('submit', addTask);
-
-// Удаление задачи
 tasksList.addEventListener('click', deleteTask);
-
-// Отмечаем задачу завершенной
 tasksList.addEventListener('click', doneTask);
-
-// Редактирование задачи
 tasksList.addEventListener('dblclick', editTask);
 
-// Функции
+// Блок функций
 function addTask (event) {
   // Отменяем отправку формы 
   event.preventDefault();
