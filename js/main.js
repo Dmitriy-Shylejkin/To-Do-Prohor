@@ -139,9 +139,7 @@ function checkEmptyList() {
 					<div class="empty-list__title">Список дел пуст</div>
 				</li>`;
     tasksList.insertAdjacentHTML('afterbegin', emptyListHTML);
-  }
-
-  if (tasks.length > 0) {
+  } else {
     const emptyListEl = document.querySelector('#emptyList');
     emptyListEl ? emptyListEl.remove() : null;
   }
