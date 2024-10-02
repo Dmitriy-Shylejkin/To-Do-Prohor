@@ -142,6 +142,7 @@ function checkEmptyList() {
   } else {
     const emptyListEl = document.querySelector('#emptyList');
     emptyListEl ? emptyListEl.remove() : null;
+    console.log('test')
   }
 } 
 
@@ -160,7 +161,7 @@ function renderTask(task) {
               <button type="button" data-action="done" class="btn-action">
                 <img src="./img/tick.svg" alt="Done" width="18" height="18">
               </button>
-              <button type="button" data-action="delete" class="btn-action">
+              <button type="button" data-action="delete" class="btn-action"> 
                 <img src="./img/cross.svg" alt="Done" width="18" height="18">
               </button>
             </div>
